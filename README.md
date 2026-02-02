@@ -8,6 +8,7 @@
 
 ## Deployment Steps
 
+```bash
 apt install php
 apt install php-mysqli php-pdo-mysql
 systemctl restart apache2
@@ -15,6 +16,7 @@ apt install mariadb-server
 sudo mariadb
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
 FLUSH PRIVILEGES;
+```
 
 1. Configure the `.env` file with your production-like database credentials:
    ```ini
